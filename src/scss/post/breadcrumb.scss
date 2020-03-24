@@ -1,0 +1,9 @@
+.post-content-main-breadcrumb {
+  .breadcrumb {
+    background-color: transparent;
+    margin: 0;
+    .breadcrumb-item a {
+      color: $primary-active-color;
+    }
+  }
+}

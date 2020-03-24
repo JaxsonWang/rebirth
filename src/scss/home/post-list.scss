@@ -87,10 +87,14 @@
           font-size: 0.725rem;
           color: $no-focus-color;
 
-          &-date {
-          }
-
-          &-readtime {
+          .icon {
+            width: 1rem;
+            height: 1rem;
+            &:before {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
           }
         }
       }
