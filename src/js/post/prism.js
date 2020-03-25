@@ -1,5 +1,4 @@
 import {loadScripts, loadStyles} from '../untils';
-import {loadingIcon} from '../untils/icon';
 import baseToast from '../other/toasts';
 
 export const prism = async (window) => {
@@ -34,7 +33,7 @@ export const prism = async (window) => {
       const loadingCover = window.document.createElement('div');
       loadingCover.id = 'pre-loading';
       loadingCover.className = 'd-flex justify-content-center align-items-center pre-block-loading';
-      loadingCover.innerHTML = `<div class="loading"><div class="d-flex justify-content-center text-center loading-icon">${loadingIcon}</div><div class="text-center loading-text"><span>载入代码中...</span></div></div>`;
+      loadingCover.innerHTML = `<div class="loading"><div class="d-flex justify-content-center text-center loading-icon"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div><div class="text-center loading-text"><span>载入代码中...</span></div></div>`;
       const getCodeParen = block.parentNode;
       getCodeParen.insertBefore(loadingCover, block);
     });
